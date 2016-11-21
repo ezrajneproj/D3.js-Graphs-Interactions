@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>D3 Project</title>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <link rel="stylesheet" type="text/css" href="styles/barchart.css">
+    <link rel="stylesheet" type="text/css" href="styles/pack.css">
+    <link rel="stylesheet" type="text/css" href="styles/tree.css">
+    <!-- d3 -->
+    <script type="text/javascript" src="d3.js"></script>
+    <script type="text/javascript" src="global.js"></script>
+    <!-- User created libraries -->
+    <script type="text/javascript" src="d3-tree.js"></script>
+    <script type="text/javascript" src="d3-barchart.js"></script>
+    <script type="text/javascript" src="d3-pack.js"></script>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript" src="graphcontroller.js"></script>
+</head>
+<body>
+    <div class="align-horizontal-divs">
+        <button class="block" onclick="onUserSelect(1)">General Public</button>
+        <button class="block" onclick="onUserSelect(2)">Industrial Collaborator</button>
+        <button class="block" onclick="onUserSelect(3)">Visually Impaired</button>
+    </div>
+<div class="align-horizontal-divs">
+    <div style="width: 525px; height: 677px;" class="block svgparent" id="graphics-content">
+    </div>
+    <div class="align-vertical-divs block">
+        <div style="width: 810px; height: 300px; padding-top: 5px;" class="svgparent" ID="bc1Div">
+            <div class="grantinfo">
+                <p></p>
+            </div>
+        </div>
+        <div style="width: 810px; height: 350px; text-align: center; margin-top: 20px;" class="svgparent" id="divPack1">
+            <div class="packinfo">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

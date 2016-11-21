@@ -1,0 +1,75 @@
+
+/*
+///////////////////////////////////////////////////////////////////////
+//
+// Module: barchart CSS style sheet 
+//
+// Author: Mike Chantler
+//
+// What it does:
+//	Provides CSS styling for the bachart application
+//
+//
+// Version history
+//	v001	16/08/2016	mjc	Created.
+//
+///////////////////////////////////////////////////////////////////////
+*/
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'News Cycle', sans-serif;
+	font-size: 14pt;
+}
+
+rect {
+	fill: yellow;
+	stroke: #000000;
+	stroke-width: 1;
+	stroke-opacity: 1;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+text.barLabelStyle {
+	text-anchor: middle;
+	font-family: sans-serif;
+	font-size: 11px;
+	fill: black;
+}
+
+/* added */
+.colorblind rect {
+    fill: #ff7f0e !important;
+}
+
+.colorblind #yaxisRect {
+    fill: white !important;
+}
+
+.grantinfo {
+    float: left;
+    padding: 5px;
+    font: 24px sans-serif;
+}
+
+.grantinfo p {
+    position: absolute;
+    background: white;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font: 10px sans-serif;
+}
+
+.xtext {
+    font: 9px sans-serif;
+}
